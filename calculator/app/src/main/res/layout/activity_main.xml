@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/igualbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="162dp"
+        android:text="="
+        android:textSize="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857"
+        android:onClick="igualbutton"/>
+
+    <Button
+        android:id="@+id/clearbutton"
+        android:layout_width="338dp"
+        android:layout_height="55dp"
+        android:onClick="clearbutton"
+        android:shadowColor="#F44336"
+        android:text="CLEAR ALL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <TableRow
+        android:layout_width="385dp"
+        android:layout_height="46dp"
+        android:scrollbarFadeDuration="400"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807">
+
+        <Button
+            android:id="@+id/cosbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cos"
+            android:onClick="cosbutton"/>
+
+        <Button
+            android:id="@+id/sinbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sin"
+            android:onClick="sinbutton"/>
+
+        <Button
+            android:id="@+id/tanbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tan"
+            android:onClick="tanbutton"/>
+    </TableRow>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="376dp"
+        android:layout_height="193dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:onClick="button7"/>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:onClick="button8"/>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:onClick="button9"/>
+
+            <Button
+                android:id="@+id/borrarultimo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="borrarultimo"
+                android:text="return" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:onClick="button4"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:onClick="button5"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:onClick="button6"/>
+
+            <Button
+                android:id="@+id/sumbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sumbutton"
+                android:text="+"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:onClick="button1"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:onClick="button2"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:onClick="button3"/>
+
+            <Button
+                android:id="@+id/restarbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="restarbutton"
+                android:text="-"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:onClick="button0"/>
+
+            <Button
+                android:id="@+id/multbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="multbutton"
+                android:text="X" />
+
+            <Button
+                android:id="@+id/divbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="divbutton"
+                android:text="/" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/pantalla"
+        android:layout_width="362dp"
+        android:layout_height="94dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="46sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
